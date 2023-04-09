@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="teacherAssignment">
+    <class name="TeacherAssignment" table="TeacherAssignment">
+        <id name="id" column="T_ID">
+            <generator class="increment"/>
+        </id>
+        <property name="teacherId" type="integer" column="TEACHERID"/>
+        <property name="classSubjectId" type="integer" column="CLASSSUBJECTID"/>
+        <property name="teacherName" type="text" column="TEACHERNAME"/>
+        <property name="classId" type="integer" column="CLASSID"/>
+        <property name="className" type="text" column="CLASSNAME"/>
+    </class>
+</hibernate-mapping>

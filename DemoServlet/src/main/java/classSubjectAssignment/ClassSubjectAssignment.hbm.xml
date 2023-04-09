@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="classSubjectAssignment">
+    <class name="ClassSubjectAssignment" table="ClassSubjectAssignment">
+        <id name="id" column="Sub_ID">
+            <generator class="increment"/>
+        </id>
+        <property name="classId" type="integer" column="CLASSID"/>
+        <property name="className" type="text" column="CLASSNAME"/>
+        <property name="subjectId" type="integer" column="SUBJECTID"/>
+        <property name="subjectName" type="text" column="SUBJECTNAME"/>
+    </class>
+</hibernate-mapping>
